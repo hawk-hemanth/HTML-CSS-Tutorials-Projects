@@ -112,3 +112,84 @@ All the HTML filenames should have a extensions .html
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## HTML HEADING
+
+Headings go from ```<h1> </h1> to <h6> </h6>```. Search Engines use them to understand the structure of the webpage.
+
+Use <h1> for main heading followed by <h2> and so on.
+
+Each heading has its default size. You can change that by specifying inside a style element.
+
+** chnage your style like this.
+```html
+<h1 style="font-size:60px;">Heading 1</h1>
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML PARAGRAPHS
+
+In html, you cannot be sure of how html will be displayed on each screen size. Adding extra lines or spaces to the document does not add new lines to the page. 
+Browser removes extra spaces once page displays.
+
+```html
+<p>This is a paragraph</p>
+```
+
+* Line breaks: ```<br>``` element
+Use this when you want a line break without starting a new paragraph.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML STYLES
+
+The HTML Style attribute syntax:
+
+```html
+<tagname style="property:value;">
+```
+* Where the property is a CSS property and value is a CSS Value.
+
+*  <b>Background color:</b> Defines the background color for an HTML element
+```html
+<body style="background-color:powderblue;">
+```
+
+* Set background color for two different elements:
+```html
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+```
+
+**Text color
+```html
+ <h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p> 
+```
+**Fonts
+```html
+ <h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p> 
+```
+**Text Size
+```html
+ <h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p> 
+```
+
+**Text alignment
+```html
+ <h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p> 
+```
+
+<strong>Styles summary</strong> 
+
+* Use the style attribute for styling HTML elements
+* Use background-color for background color
+* Use color for text colors
+* Use font-family for text fonts
+* Use font-size for text sizes
+* Use text-align for text alignment
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML FORMATTING
