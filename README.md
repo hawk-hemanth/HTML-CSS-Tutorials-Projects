@@ -161,23 +161,23 @@ The HTML Style attribute syntax:
 
 ** Text color
 ```html
- <h1 style="color:blue;">This is a heading</h1>
+<h1 style="color:blue;">This is a heading</h1>
 <p style="color:red;">This is a paragraph.</p> 
 ```
 ** Fonts
 ```html
- <h1 style="font-family:verdana;">This is a heading</h1>
+<h1 style="font-family:verdana;">This is a heading</h1>
 <p style="font-family:courier;">This is a paragraph.</p> 
 ```
 ** Text Size
 ```html
- <h1 style="font-size:300%;">This is a heading</h1>
+<h1 style="font-size:300%;">This is a heading</h1>
 <p style="font-size:160%;">This is a paragraph.</p> 
 ```
 
 ** Text alignment
 ```html
- <h1 style="text-align:center;">Centered Heading</h1>
+<h1 style="text-align:center;">Centered Heading</h1>
 <p style="text-align:center;">Centered paragraph.</p> 
 ```
 
@@ -220,3 +220,123 @@ There is only exclamation at the start not at the end.
 
 <!-- Remember to add more information here -->
 ```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML CSS
+
+HTML STYLES-CSS
+
+CSS can control layout of multiple pages at same time.
+
+CSS: Cascading Style Sheet: To control color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes etc
+
+Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+
+CSS can be added to HTML documents in 3 ways:
+
+   a. <b>Inline</b> - by using the style attribute inside HTML elements
+   b. <b>Internal</b> - by using a ```<style>``` element in the ```<head>``` section
+   c. <b>External</b> - by using a ```<link>``` element to link to an external CSS file.
+
+  1. CSS INLINE:- To apply a unique style to a single HTML element, and it uses the style attribute of such element.
+   Eg:- Set h1 color to blue and p color to red.
+
+   ```html
+   <h1 style="color:blue;"> A Blue Heading </h1>
+   <p style="color:red;"> A red Paragraph </p>
+   ```
+
+   2. CSS INTERNAL:- To define style for a single HTML Page and it defined in ```<head>``` section of an html page within ```<style>``` element.
+    Eg:- Defining the ```<style>``` in the ```<head>``` section.
+
+    ```html
+    
+     <!DOCTYPE html>
+  <html>
+    <head>
+     <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+     </style>
+    </head>
+    <body>
+
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+
+    </body>
+   </html> 
+    ```
+
+   3. CSS EXTERNAL:- Define style for many HTML pages. To use the external style, you add a link to it in the head section of the html. File must not contain any HTML Code and can be written in any text editor. Save with a .css extension. 
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+        <head>
+        <link rel="Stylesheet" href="styles.css">
+        </head>
+
+        <body>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+        </body>
+    </html>
+    ```
+    This is the style sheet with extension of (.css)
+
+    ```css
+    body {
+        background-color: powderblue;
+    }
+    h1 {
+        color: green;
+    }
+    p {
+        color: red;
+    }
+    ```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## CSS FONTS COLORS AND SIZES
+
+Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.
+
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+```
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+## CSS BOX MODEL
+
+![Alt text](image.png)
