@@ -115,13 +115,13 @@ All the HTML filenames should have a extensions .html
 
 Headings go from ```<h1> </h1> to <h6> </h6>```. Search Engines use them to understand the structure of the webpage.
 
-Use <h1> for main heading followed by <h2> and so on.
+Use ```<h1>``` for main heading followed by ```<h2>``` and so on.
 
 Each heading has its default size. You can change that by specifying inside a style element.
 
 ** chnage your style like this.
 ```html
-<h1 style="font-size:60px;">Heading 1</h1>
+<h1> style="font-size:60px;">Heading 1</h1>
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -193,3 +193,30 @@ The HTML Style attribute syntax:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ## HTML FORMATTING
+
+```html
+<b>      - Bold text
+<strong> - Important text
+<i>      - Italic text...often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+<em>     - Emphasized text. A screen reader will emphasize the text using verbal stress
+<mark>   - Marked text. Element that should be highlighted. You can use style to change the color.
+<small>  - Smaller text
+<del>    - Deleted text. Browsers usually strike a line through
+<ins>    - Inserted text... (into a document) Browsers usually underline this. Can be used after del. 
+<sub>    - Subscript text...appears half a character below the normal line
+<sup>    - Superscript text...can be used for footnotes citation
+<address>- To Write the Address
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML COMMENTS
+
+There is only exclamation at the start not at the end.
+
+```html
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -->
+```
