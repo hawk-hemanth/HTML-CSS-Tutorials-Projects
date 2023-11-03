@@ -653,7 +653,6 @@ table {
   background-color: #f1f1c1;
 }
 ```
-
 * <b> CHAPTER SUMMARY _HTML CHAPTER SUMMARY </b>
 
 1. Use the HTML ```<table>``` element to define a table
@@ -669,3 +668,115 @@ table {
 11. Use the colspan attribute to make a cell span many columns
 12. Use the rowspan attribute to make a cell span many rows
 13. Use the id attribute to uniquely define one table 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML LISTS 
+
+1. ** unordered list has bullets 
+2. ** ordered lists have numberings or some kind of sequence labels
+
+* <b> UNORDERED HTML List:-</b> each starts with <ul> tag and each list item starts with <li> tag by default, list item is marked with small black circles as bullets.
+```<ul> </ul>``` :- Unordered List Tag 
+```<li> </li>``` :- List individual Elements 
+
+```html
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+```
+To choose list marker, use css list-style-type property to define style of the list item market.
+   * Disc(Filled Circle)
+```html
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+``` 
+   * Open (Unfilled Circle)
+```html
+ <ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+``` 
+   * Square (Filled with Black)
+```html
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+``` 
+
+
+* <b> ORDERED HTML LIST:-</b> Numbers are used to mark list items by default.
+```<ol> </ol>``` :- Ordered List Tag
+
+```html
+ <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+```
+<b>HTML Description lists::</b> List of terms with description of each term in the list. description list is marked by ```<dl>``` tag and each description term (name) is marked by ```<dt>``` tag and the description of each description list term is tagged by ```<dd>```:
+
+```html
+ <dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl> 
+```
+** Ordered HTML List - The Type Attribute
+With the type attribute of the <ol> tag, you can define the type of the list item marker
+
+```
+Type 	Description
+type="1" 	The list items will be numbered with numbers (default)
+type="A" 	The list items will be numbered with uppercase letters
+type="a" 	The list items will be numbered with lowercase letters
+type="I" 	The list items will be numbered with uppercase roman numbers
+type="i" 	The list items will be numbered with lowercase roman numbers
+```
+
+** HTML List Tags
+```
+<ul> 	Defines an unordered list
+<ol> 	Defines an ordered list
+<li> 	Defines a list item
+<dl> 	Defines a description list
+<dt> 	Defines a term in a description list
+<dd> 	Describes the term in a description list
+```
+
+* Description lists: List of terms with a description of each term. 
+```<dl>``` tag defines the list, ```<dt>``` defines the term (name), and ```<dd>``` tag describes each term:
+```
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl> 
+```
+* Description list summary:
+Use the HTML ```<dl>``` element to define a description list
+Use the HTML ```<dt>``` element to define the description term
+Use the HTML ```<dd>``` element to describe the term in a description list
+
+HTML List Tags
+```
+**Tag 	Description
+<ul> 	Defines an unordered list
+<ol> 	Defines an ordered list
+<li> 	Defines a list item
+<dl> 	Defines a description list
+<dt> 	Defines a term in a description list
+<dd> 	Describes the term in a description list
