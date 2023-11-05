@@ -669,7 +669,7 @@ table {
 12. Use the rowspan attribute to make a cell span many rows
 13. Use the id attribute to uniquely define one table 
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## HTML LISTS 
 
@@ -747,7 +747,7 @@ type="i" 	The list items will be numbered with lowercase roman numbers
 ```
 
 ** HTML List Tags
-```
+```html
 <ul> 	Defines an unordered list
 <ol> 	Defines an ordered list
 <li> 	Defines a list item
@@ -758,7 +758,7 @@ type="i" 	The list items will be numbered with lowercase roman numbers
 
 * Description lists: List of terms with a description of each term. 
 ```<dl>``` tag defines the list, ```<dt>``` defines the term (name), and ```<dd>``` tag describes each term:
-```
+```html
 <dl>
   <dt>Coffee</dt>
   <dd>- black hot drink</dd>
@@ -772,7 +772,7 @@ Use the HTML ```<dt>``` element to define the description term
 Use the HTML ```<dd>``` element to describe the term in a description list
 
 HTML List Tags
-```
+```html
 **Tag 	Description
 <ul> 	Defines an unordered list
 <ol> 	Defines an ordered list
@@ -780,3 +780,378 @@ HTML List Tags
 <dl> 	Defines a description list
 <dt> 	Defines a term in a description list
 <dd> 	Describes the term in a description list
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## HTML BLOCK & INLINE
+
+<p>Every HTML element has a default display value, depending on what type of element it is.
+
+The display property is very important in web development as it controls the fundamental appearance of elements on the web page, and is the cornerstone of responsive and adaptive design.
+
+The display property in HTML is actually a CSS property that specifies how a certain HTML element should be displayed.</p>
+
+<p> There are several different values that the display property can take, each affecting the layout of the elements in a unique way. Here's a rundown of the most common display values: </p>
+
+1. <b> none:-</b>This value will make an element and its content invisible and removed from the flow of the document. It's as if the element does not exist. 
+2. <b> block:-</b>Elements with display: block; start on a new line and stretch out to the left and right as far as they can. Typical block elements are ```<div>, <p>, and <h1> to <h6>```. These elements will always create a "block" on the page, and they do not allow other HTML elements to sit alongside them on the left or right within the same container.
+3. <b> Inline:-</b> This value allows elements to sit next to each other on the same line. Only the width that the content itself occupies is applied to the element, without breaking onto a new line. ```<span>, <a>, <img>, and <strong>``` are examples of inline elements. These elements will not start on a new line and only take up as much width as necessary.
+
+    <h3> I. BLOCK LEVEL ELEMENTS </h3>
+
+    * A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+    * The ```<p>``` element defines a paragraph in an HTML document.
+    * The ```<div>``` element defines a division or a section in an HTML document.
+
+    <h3> II. INLINE ELEMENTS </h3>
+
+    * An inline element does not start on a new line. An inline element only takes up as much width as necessary. This is a ```<span>``` element inside a paragraph.
+    * An inline element cannot contain a block-level element!
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## The ```<div>``` Element
+
+```<div>``` element is used as a container for other HTML elements.
+
+```<div>``` element has no required attribute. the common attributes of the div element are: style, class, id
+
+When used together with CSS, the ```<div>``` element can used to style blocks of content: 
+```html
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div> 
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## The ```<span>``` Element
+
+The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+
+The <span> element has no required attributes, but style, class and id are common.
+
+```html
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# HTML CLASSES
+
+HTML Class attribute is used to specify a class for an html element. HTML classes are a way to identify multiple elements as part of a group, kind of like a team jersey number that lets you know which players are on the same team. They allow you to assign the same styling and behavior to any element that is part of that class.
+
+<p> In simpler terms, think of a class in HTML like a label or a tag you put on certain elements. When you write your CSS (which is the code that makes your website look pretty), you can say, “Hey, every element with this label, I want you to make it red, or big, or give it some space around it,” and so on. The same goes for JavaScript (the programming language that adds interactivity to your site); you can tell it, “Find every element with this label and make something happen when you click on them.” </p>
+
+```html
+<p class="attention">Don't forget to RSVP!</p>
+<p class="attention">Remember to bring a dish for sharing.</p>
+<p>See you there!</p>
+```
+
+```css
+.attention {
+  color: red;
+  font-weight: bold;
+}
+```
+ JavaScript snippet selects all the elements with the class attention and adds a click event to them, so when you click on those paragraphs, an alert pops up.
+```js
+ let attentionElements = document.querySelectorAll('.attention');
+
+attentionElements.forEach(element => {
+  element.addEventListener('click', function() {
+    alert('Don't forget this message!');
+  });
+});
+```
+
+** In the example below, all three div elements with class city are style equally together equally according to the .city style definition in the header.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html> 
+```
+
+** Here we can also style note class in ```<span>``` elements with .note style definition
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html> 
+```
+NB
+
+Tip: The class attribute can be used on any HTML element.
+
+<b> Note: The class name is case sensitive! </b>
+
+<h3> The syntax of Class </h3>
+  To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}.
+
+  ```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+```
+
+<h3> Multiple Classes </h3>
+HTML elements can belong to more than one class.
+
+To define multiple classes, separate the class names with a space, e.g. ```<div class="city main">```. The element will be styled according to all the classes specified.
+
+<b> The class name can also be used by JavaScript to perform certain tasks for specific elements. JavaScript can access elements with a specific class name with the ```getElementsByClassName()``` method: </b>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+##  HTML id Attribute 
+
+* The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document.
+<b> Only one element has a particular "id".</b>
+<p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id. </p>
+
+<span style="color:red;">Note:-</span> The "id" name is case sensitive. The id name contain atleast one character, cannot start with a number, and must not contain whitespaces.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+```
+<h4> The Difference between ID & CLASS </h4>
+
+1. ID attribute selects only one unique element on a page, while class select multiple elements with same styles or scripts.
+2. While refering to the stylesheet, <b> id are referred to as "#"(ash)</b> & <b> classes are referred to as "."(period)</b>
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## HTML Bookmarks with ID and Links 
+
+<ul>
+<li>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.</li>
+
+<li>Bookmarks can be useful if your page is very long.</li>
+
+<li>To use a bookmark, you must first create it, and then add a link to it.</li>
+
+<li>Then, when the link is clicked, the page will scroll to the location with the bookmark.</li>
+</ul>
+
+* To create a Bookmark & Add a Link
+
+```html
+<h2 id="c4">Chapter 4</h2> <!-- Created a element with ID -->
+
+<a href="#c4">Jump to the Chapter 4 </a> <!-- Create a Reference Link for that ID -->
+
+<!-- Add a Link from other HTMl Page -->
+
+<a href="html_demo.html#c4">Jump to Chapter 4 </a>
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## HTML Iframes 
+
+It is used to display a webpage within another webpage
+
+* HTML Iframe syntax
+
+HTML Iframe Syntax:
+
+```<iframe>``` tag specifies an inline frame. This inline frame is used to  embed another document within the current html document
+
+** Syntax example below
+
+```<iframe src="url" title="description">```
+
+NB: It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the iframe is.
+
+
+** Use height and width to specify the size ofthe iframe
+```html
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+```
+
+** You can also add style attribute and use css height and width properties:
+```html
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML JavaScript (```<script>```) Tag
+
+JavaScript makes HTML pages more dynamic and interactive.
+
+<p> The HTML script tag is used to define a client-side script (JavaScript).
+
+The ```<script>``` element either contains script statements, or it points to an external script file through the src attribute.
+
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content </p>
+
+```html
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+```
+The HTML ```<noscript>``` tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts:
+```html
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript> 
+
+<!-- **The full script is: -->
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## HTML FILE PATH
+
+A file path describes the location of a file in a website's folder structure. 
+
+Examples of filepath:-
+
+<table style="width=100%">
+<tr>
+<th> PATH </th>
+<th> Description </th>
+</tr>
+<tr>
+<td>```<img src="picture.jpg">```</td>
+<td> The "picture.jpg" file is located in the same folder as the current page </td>
+</tr>
+<tr>
+<td>```<img src="images/picture.jpg">```</td>
+<td>The "picture.jpg" file is located in the images folder in the current folder</td>
+</tr>
+<tr>
+<td>```<img src="/images/picture.jpg">```</td>
+<td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+</tr>
+<tr>
+<td>```<img src="../picture.jpg">```</td>
+<td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+</tr>
