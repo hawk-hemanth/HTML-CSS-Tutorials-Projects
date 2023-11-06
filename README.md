@@ -1140,18 +1140,24 @@ Examples of filepath:-
 <th> Description </th>
 </tr>
 <tr>
-<td>```<img src="picture.jpg">```</td>
+<td>img src="picture.jpg"</td>
 <td> The "picture.jpg" file is located in the same folder as the current page </td>
 </tr>
 <tr>
-<td>```<img src="images/picture.jpg">```</td>
+<td>img src="images/picture.jpg"</td>
 <td>The "picture.jpg" file is located in the images folder in the current folder</td>
 </tr>
 <tr>
-<td>```<img src="/images/picture.jpg">```</td>
+<td>img src="/images/picture.jpg"</td>
 <td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
 </tr>
 <tr>
-<td>```<img src="../picture.jpg">```</td>
+<td>img src="../picture.jpg"</td>
 <td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
 </tr>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## HTML - THE HEAD ELEMENT
+
+The HTML ```<head>``` element is a container for the following elements: ```<title>, <style>, <meta>, <link>, <script>, and <base>.```
+
