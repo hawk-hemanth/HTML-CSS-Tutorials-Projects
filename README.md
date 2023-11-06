@@ -1519,5 +1519,368 @@ Loading the Javsscript external scripts
 
 - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+## HTML Encoding 
 
+To display an HTML page correctly, a web browser must know which character set to use.
 
+The character set is specified in the ```<meta>``` tag:
+```html
+<meta charset="UTF-8>
+```
+
+The HTML5 specification encourages web developers to use the UTF-8 character set. UTF-8 covers almost all of the characters and symbols in the world!
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h1 style="color:blue;"> HTML FORMS </h1>
+
+## Introduction 
+
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+<p><b> The ```<form> </form>``` element is used to create an HTML form for user input: </b>
+The ```<form>``` element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. </p>
+
+1. <h4> The ```input``` Element </h4>
+   
+   The HTML ```<input>``` element is the most used form element. An ```<input>``` element can be displayed in many ways, depending on the type attribute.
+
+  <table class="ws-table-all">
+ <tr>
+  <th>Type</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;text&quot;&gt;</td>
+  <td>Displays a single-line text input field</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;radio&quot;&gt;</td>
+  <td>Displays a radio button (for selecting one of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;checkbox&quot;&gt;</td>
+  <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;submit&quot;&gt;</td>
+  <td>Displays a submit button (for submitting the form)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;button&quot;&gt;</td>
+  <td>Displays a clickable button</td>
+ </tr>
+ </table>
+
+2. <h4> Text Field </h4>
+The ```<input type="text">``` defines a single-line input field for text input.
+
+```html
+<form>
+  <label for="fname">First name:</label><br> <!-- Create a Label first & than a line break -->
+  <input type="text" id="fname" name="fname"><br> <!-- Define the input field by referring it to the defined -->
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+
+3. <h4> The Label Element </h4>
+The ```<label>``` tag defines a label for many form elements.
+
+The ```<label>``` element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+
+The for attribute of the ```<label>``` tag should be equal to the id attribute of the ```<input>``` element to bind them together.
+
+4. <h4> Radio Buttons </h4>
+The ```<input type="radio">``` defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices.
+
+```html
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+5. <h4> Checkboxes </h4>
+The ```<input type= "checkbox">``` defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+
+6. <h4> Submit button </h4>
+The ```<input type="submit">``` defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a file on the server with a script for processing input data.
+
+The form-handler is specified in the form's action attribute.
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<span style="color:red;">Note:- </span> Notice that each input field must have a name attribute to be submitted.
+If the name attribute is omitted, the value of the input field will not be sent at all. 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Form Attributes 
+
+1. <h4> The Action Attribute </h4>
+The action attribute defines the action to be performed when the form is submitted.
+
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+2. <h4> The Target Attribute </h4>
+The target attribute specifies where to display the response that is received after submitting the form.
+
+The target attribute can have one of the following values:
+<table class="ws-table-all notranslate"> 
+  <tr>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>_blank</td>
+    <td>The response is displayed in a new window or tab</td>
+  </tr>
+  <tr>
+    <td>_self</td>
+    <td>The response is displayed in the current window</td>
+  </tr>
+  <tr>
+    <td>_parent</td>
+    <td>The response is displayed in the parent frame</td>
+  </tr>
+  <tr>
+    <td>_top</td>
+    <td>The response is displayed in the full body of the window</td>
+  </tr>
+  <tr>
+    <td><i>framename</i></td>
+    <td>The response is displayed in a named iframe</td>
+  </tr>
+</table>
+
+3. <h4> The Method Attribute </h4>
+The method attribute specifies the HTTP method to be used when submitting the form data.
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+
+The default HTTP method when submitting form data is GET. 
+
+```html
+<form action="/action_page.php" method="get"> <!-- get method to submit the data -->
+<form action="/action_page.php" method="post"> <!-- post method to submit the data -->
+```
+
+<p><b>Notes on GET:</b> </p>
+<ul>
+  <li>Appends the form data to the URL, in name/value pairs</li>
+  <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+  <li>The length of a URL is limited (2048 characters)</li>
+  <li>Useful for form submissions where a user wants to bookmark the result</li>
+  <li>GET is good for non-secure data, like query strings in Google</li>
+</ul>
+<p><b>Notes on POST:</b> </p>
+<ul>
+  <li>Appends the form data inside the body of the HTTP request (the submitted 
+  form data is not shown in the URL)</li>
+  <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+  <li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+
+4. <h4> The AutoComplete Attribute </h4>
+
+The ```autocomplete``` attribute specifies whether a form should have autocomplete on or off.
+
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+
+```html
+<form action="/action_page.php" autocomplete="on">
+```
+
+5. <h4> The Novalidate Attribute </h4>
+The ```novalidate``` attribute is a boolean attribute.
+
+When present, it specifies that the form-data (input) should not be validated when submitted.
+
+``` <form action="/action_page.php" novalidate> ```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Form Elements 
+
+The HTML ```<form>``` element can contain one or more of the following form elements:
+<ul>
+<li> <code class="w3-codespan">&lt;input&gt;</code></li>
+<li> <code class="w3-codespan">&lt;label&gt;</code></li>
+<li> <code class="w3-codespan">&lt;select&gt;</code></li>
+<li> <code class="w3-codespan">&lt;textarea&gt;</code></li>
+<li> <code class="w3-codespan">&lt;button&gt;</code></li>
+<li> <code class="w3-codespan">&lt;fieldset&gt;</code></li>
+<li> <code class="w3-codespan">&lt;legend&gt;</code></li>
+<li> <code class="w3-codespan">&lt;datalist&gt;</code></li>
+<li> <code class="w3-codespan">&lt;output&gt;</code></li>
+<li> <code class="w3-codespan">&lt;option&gt;</code></li>
+<li> <code class="w3-codespan">&lt;optgroup&gt;</code></li>
+</ul>
+
+1. <h4>The &lt;input&gt; Element</h4>
+One of the most used form elements is the ```<input>``` element.
+
+The ```<input>``` element can be displayed in several ways, depending on the type attribute.
+
+2. <h4>The &lt;label&gt; Element</h4>
+The ```<label>``` element defines a label for several form elements.
+
+The ```<label>``` element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+
+The ```<label>``` element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the ```<label>``` element, it toggles the radio button/checkbox.
+
+The for attribute of the ```<label>``` tag should be equal to the id attribute of the ```<input>``` element to bind them together.
+
+3. <h4> The &lt;select&gt; Element</h4>
+The ```<select>``` element defines a drop-down list:
+The ```<option>``` element defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+
+```html
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```
+
+The ```<option>``` element defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+``` <option value="fiat" selected>Fiat</option> ```
+
+** <b>Visible Values:</b> Use the size attribute to specify the number of visible values:
+```html
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```
+
+** <b> Allow Multiple Selections: </b> Use the ```multiple``` attribute to allow the user to select more than one value:
+```html
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```
+
+4. <h4> The &lt;textarea&gt; Element</h4>
+The ```<textarea>``` element defines a multi-line input field (a text area):
+
+```html
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+```
+
+5. <h4> The &lt;button&gt; Element</h4>
+The ```<button>``` element defines a clickable button:
+
+``` <button type="button" onclick="alert('Hello World!')">Click Me!</button> ```
+
+6. <h4> The &lt;fieldset&gt; & &lt;legend&gt; Element</h4>
+The ```<fieldset>``` element is used to group related data in a form.
+
+The ```<legend>``` element defines a caption for the ```<fieldset>``` element.
+
+```html
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+```
+
+7. <h4> The &lt;output&gt; Element</h4>
+The ```<output>``` element represents the result of a calculation (like one performed by a script).
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Input Types
+
+<p>Here are the different input types you can use in HTML:</p>
+<ul>
+  <li><code class="w3-codespan">&lt;input type=&quot;button&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;checkbox&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;color&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;date&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;datetime-local&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;email&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;file&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;hidden&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;image&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;month&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;number&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;password&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;radio&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;range&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;reset&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;search&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;submit&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;tel&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;text&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;time&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;url&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;week&quot;&gt;</code></li>
+</ul>
