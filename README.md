@@ -1161,3 +1161,121 @@ Examples of filepath:-
 
 The HTML ```<head>``` element is a container for the following elements: ```<title>, <style>, <meta>, <link>, <script>, and <base>.```
 
+```<head>``` element is a container for metadata (data about data) and is placed between the ```<html>``` tag and the ```<body>``` tag. HTML metadata is data about the HTML document. Metadata is not displayed. 
+Metadata typically define the document title, character set, styles, scripts and other meta information.
+
+
+
+```<title> element:```
+
+Defines document title, it must contain only text and it is shown in the browser title bar or in page's tag. Title element is required in html documents. The content ofthis page title helps for Search Engine Optimization of a webpage which is used by search engine algorithms to decide the order when listing pages in search results.
+
+The ```<title>``` element: defines a title in the browser toolbar provides a title for the page when it is added to favorites displays a title for the page in search engine-results. So, try to make the title as accurate and meaningful as possible.
+
+
+
+The HTML ```<style>``` element
+
+This element is used to define style information for a single HTML page. 
+```html
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style> 
+```
+
+
+The HTML ```<link>``` Element.
+
+Defines relationship between current document and an external resource. Link tag is most used to link to external style sheets:
+```html
+<link rel="stylesheet" href="mystyle.css"> 
+```
+
+** The link element in action
+```html
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+```
+
+<b> Example:- </b>
+
+1. Define the character set used:
+```html
+<meta charset="UTF-8">
+```
+
+2. Define keywords for search engines:</b>
+
+```html
+<meta name="keywords" content="HTML, CSS, JavaScript">
+```
+3. Define a description of your web page:
+
+```html
+<meta name="description" content="Free Web tutorials">
+```
+
+```html
+<!-- Define the author of a page: -->
+<meta name="author" content="John Doe">
+
+<!-- Refresh document every 30 seconds: -->
+<meta http-equiv="refresh" content="30">
+
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+<b> Summary </b>
+
+```html
+<!-- Example of <meta> tags: -->
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+```
+
+The HTML ```<base>``` Element
+
+```<base>``` element specifies the base URL and/or target for all relative URLs in a page. 
+
+The ```<base>``` tag must have either an href or a target attribute present, or both.
+
+There can only be one single <base> element in a document!
+
+** Specify a default URL and a default target for all links on a page:
+
+```html
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+```
+
+** Chapter Summary
+
+```
+Chapter Summary
+
+   The <head> element is a container for metadata (data about data)
+   The <head> element is placed between the <html> tag and the <body> tag
+   The <title> element is required and it defines the title of the document
+   The <style> element is used to define style information for a single document
+   The <link> tag is most often used to link to external style sheets
+   The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+   The <script> element is used to define client-side JavaScripts
+   The <base> element specifies the base URL and/or target for all relative URLs in a page
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## HTML LAYOUT 
+
