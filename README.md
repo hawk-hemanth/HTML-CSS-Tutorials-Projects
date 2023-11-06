@@ -1884,3 +1884,379 @@ The ```<output>``` element represents the result of a calculation (like one perf
   <li><code class="w3-codespan">&lt;input type=&quot;url&quot;&gt;</code></li>
   <li><code class="w3-codespan">&lt;input type=&quot;week&quot;&gt;</code></li>
 </ul>
+
+1. <h4> Input Type text </h4>
+```<input type="text">``` defines a single-line text input field:
+
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+
+2. <h4> Input type Password </h4>
+```<input type="password">``` defines a password field:
+<b> The characters in a password field are masked (shown as asterisks or circles). </b>
+
+```html
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+```
+
+3. <h4> Input Type Submit</h4>
+```<input type="submit">``` defines a button for submitting form data to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+4. <h4> Input Type Reset </h4>
+```<input type="reset">``` defines a reset button that will reset all form values to their default values:
+
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+```
+
+5. <h4> Input Type Radio </h4>
+```<input type="radio">``` defines a radio button.
+
+Radio buttons let a user select ONLY ONE of a limited number of choices:
+```html
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+6. <h4> Input Type Checkbox </h4>
+```<input type="checkbox">``` defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+
+7. <h4> Input type Button </h4>
+```<input type="button">``` defines a button:
+``` <input type="button" onclick="alert('Hello World!')" value="Click Me!"> ```
+
+8. <h4> Input type Date </h4>
+The ```<input type="date">``` is used for input fields that should contain a date.
+
+Depending on browser support, a date picker can show up in the input field.
+
+```html
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+```
+
+8. <h4> Input type Email </h4>
+The ```<input type="email">``` is used for input fields that should contain an e-mail address.
+
+Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+
+```html
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+```
+
+9. <h4> Input type File </h4>
+<b> The ```<input type="file">``` defines a file-select field and a "Browse" button for file uploads. </b>
+
+```html
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+```
+
+10. <h4> Input type Number </h4>
+The ```<input type="number">``` defines a numeric input field.
+
+You can also set restrictions on what numbers are accepted.
+
+The following example displays a numeric input field, where you can enter a value from 1 to 5:
+```html
+<form>
+  <label for="quantity">Quantity (between 1 and 15):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="15">
+</form>
+```
+
+11. <h4> Input Type Url </h4>
+The ```<input type="url">``` is used for input fields that should contain a URL address.
+
+Depending on browser support, the url field can be automatically validated when submitted.
+
+Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.
+
+```html
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Input Attributes 
+
+1. <h4> The Value Attriute:- </h4> The input value attribute specifies an initial value for an input field:
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+```
+
+2. <h4> The size Attribute </h4>
+The input size attribute specifies the visible width, in characters, of an input field.
+
+The default value for size is 20.
+
+Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+```
+
+3. <h4> The paceholder Attribute </h4>
+The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+
+The short hint is displayed in the input field before the user enters a value.
+
+The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+```html
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678">
+</form>
+```
+
+4. <h4> The autofocus Attribute </h4>
+The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+
+5. <h4> The autocomplete Attribute </h4>
+The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+
+Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+
+The autocomplete attribute works with ```<form>``` and the following ```<input>``` types: text, search, url, tel, email, password, datepickers, range, and color.
+```html
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Input form* Attributes 
+
+* <h4> The form Attribute </h4>
+The form attribute specifies the form the <input> element belongs to.
+
+The value of this attribute must be equal to the id attribute of the <form> element it belongs to.
+
+Example:- <span style="color:red;"> An input field located outside of the HTML form (but still a part of the form): </span>
+``html
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Canvas
+
+The HTML <canvas> element is used to draw graphics on a web page.
+
+The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+
+The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+
+Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Multimedia 
+
+Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.
+
+Web pages often contain multimedia elements of different types and formats.
+
+## HTML Video 
+
+The html ```<video> </video>``` element is used to show a video on a web page 
+
+```html
+<video width="320" height="240" controls>
+  <source src="[movie.mp4](https://www.youtube.com/watch?v=owTs8Ha6Nao&list=RDEroMPt0nY18&index=27)" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+```
+
+1. The controls attribute adds video controls, like play, pause, and volume.
+
+2. It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+
+3. The ```<source>``` element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+
+4. The text between the ```<video> & </video>``` tags will only be displayed in browsers that do not support the ```<video>``` element.
+
+** HTML ```<video>``` Autoplay
+
+To start a video automatically, use the ```autoplay``` attribute:
+```html
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+```
+
+** Add muted after autoplay to let your video start playing automatically
+```html
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# HTML Audio 
+
+The HTML <audio> element is used to play an audio file on a web page. ALong with autoplay and muted.
+
+```html
+<audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Playing Youtube Video on HTML
+
+To play your video on a web page, do the following:
+
+* Upload the video to YouTube
+* Take a note of the video id
+* Define an <iframe> element in your web page
+* Let the src attribute point to the video URL
+* Use the width and height attributes to specify the dimension of the player
+* Add any other parameters to the URL (see below)
+
+```html
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+```
+
+1. Youtube autoplay + Mute 
+Add mute=1 after autoplay=1 to let your video start playing automatically (but muted).
+```html
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
+```
+
+2. Youtube Playlist 
+A comma separated list of videos to play (in addition to the original URL).
+
+3. Youtube Loop
+Add loop=1 to let your video loop forever.
+
+Value 0 (default): The video will play only once.
+
+Value 1: The video will loop (forever).
+```html
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+```
+
+4. Youtube Controls 
+Add controls=0 to not display controls in the video player.```
+
+Value 0: Player controls does not display.
+
+Value 1 (default): Player controls display.
+
+```html 
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+```
