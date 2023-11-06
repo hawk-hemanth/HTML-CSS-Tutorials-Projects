@@ -2123,7 +2123,7 @@ The form attribute specifies the form the <input> element belongs to.
 The value of this attribute must be equal to the id attribute of the <form> element it belongs to.
 
 Example:- <span style="color:red;"> An input field located outside of the HTML form (but still a part of the form): </span>
-``html
+```html
 <form action="/action_page.php" id="form1">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
