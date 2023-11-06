@@ -1279,3 +1279,245 @@ Chapter Summary
 
 ## HTML LAYOUT 
 
+<img src="https://www.w3schools.com/html/img_sem_elements.gif">HTML Layout Elements</img>
+
+* ```<header>```  - Defines a header for a document or a section.
+* ```<nav> </nav>``` - Defines a set of navigation links
+* ```<section> </section>``` - Defines a section in a document 
+* ```<aside> </aside>``` - Defines content aside from the content
+* ```<footer> </footer>``` - Defines a footer for a document or a section.
+* ```<details> </details>``` - Defines additional details that the user can open and close on demand.
+
+## HTML Layout Technique
+
+There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:
+
+1. CSS framework (BootStrap, Tailwind CSS)
+2. CSS float property
+3. CSS flexbox
+4. CSS grid
+
+## HTML RESPONSIVE
+
+Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust for different screen sizes and viewports.
+
+<b> Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones): </b>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML Computer Code Elements 
+
+HTML contains several elements fpr defining user input and computer code.
+
+* Code Elements
+
+```html
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+</code> 
+```
+
+<b>Summary </b>
+```html
+  The <kbd> element defines keyboard input
+  The <samp> element defines sample output from a computer program
+  The <code> element defines a piece of computer code
+  The <var> element defines a variable in programming or in a mathematical expression
+  The <pre> element defines preformatted text
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## HTML SEMANTICS
+
+HTML semantic Elements
+
+Semantic elements are the elements that have a meaning and this meaning describes the content to both browser and the developer. 
+
+Non-semantic element: ```<div>``` and ```<span>```   tells nothing about the content
+
+Semantic elements: ```<form>, <table>, and <article>```  defines content
+Sites usually define elements:```<div id="nav"> <div class="header"> <div id="footer">``` to indicate navigation, header, and footer.
+
+Below is a list of some of the semantic elements in HTML.
+```
+Tag 	                  Description
+----------------------------------------------------------------------------------------------------------------------
+<article> 	    Defines independent, self-contained content
+<aside> 	      Defines content aside from the page content
+<details> 	    Defines additional details that the user can view or hide
+<figcaption> 	  Defines a caption for a <figure> element
+<figure> 	      Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer> 	      Defines a footer for a document or section
+<header> 	      Specifies a header for a document or section
+<main> 	        Specifies the main content of a document
+<mark> 	        Defines marked/highlighted text
+<nav> 	        Defines navigation links
+<section> 	    Defines a section in a document
+<summary> 	    Defines a visible heading for a <details> element
+<time> 	        Defines a date/time
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# <b> HTML Guide for Clean Scripts </b>
+
+A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code. Here are some guidelines and tips for creating good HTML code.
+
+1. <span style="color=red;"> Always Declare Document Type </span>
+
+Always declare the document type as the first line in your document.
+
+The correct document type for HTML is:
+```html
+<!DOCTYPE html>
+```
+2. <span style="color=red;"> Use Lowercase Element Names </span>
+   
+3. <span style="color=red;"> Close all HTML Elements </span>
+   
+4. <span style="color=red;"> Always Quote Attribute Values </span>
+HTML allows attribute values without quotes.
+However, we recommend quoting attribute values, because:
+
+```html
+<table class="hello">
+```
+
+5. <span style="color=red;"> Always Specify ```alt```, ```width```, ```height``` for Images </span>
+<p>Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed.
+
+Also, always define the width and height of images. This reduces flickering, because the browser can reserve space for the image before loading.</p>
+
+```html
+<img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+```
+
+6. <span style="color=red;"> Spaces and Equal Signs </span>
+
+HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+7. <span style="color=red;"> Avoid Long Code Lines & Avoid Black Lines and Identations </span>
+
+When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.
+Try to avoid too long code lines.
+
+Do not add blank lines, spaces, or indentations without a reason.
+
+For readability, add blank lines to separate large or logical code blocks.
+
+For readability, add two spaces of indentation. Do not use the tab key.
+
+```html
+<!-- Good Code Example -->
+<body>
+
+<h1>Famous Cities</h1>
+
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+
+<h2>London</h2>
+<p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+
+<h2>Paris</h2>
+<p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+
+</body>
+```
+
+8. <span style="color=red;"> Never Skip the ```<title>``` Element 
+
+The ```<title> ```element is required in HTML.
+
+The contents of a page title is very important for <i>search engine optimization (SEO)!</i>.
+
+<b> The page title is used by search engine algorithms to decide the order when listing pages in search results. </b>
+
+9. <span style="color=red;">Add the lang Attribute </span>
+
+You should always include the lang attribute inside the ```<html>``` tag, to declare the language of the Web page.
+This is meant to assist search engines and browsers.
+
+```html
+<!DOCTYPE html>
+<html lang="en-us"> <!-- Recommanded -->
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+10. <span style="color=red;"> Meta Data </span>
+
+To ensure proper interpretation and correct search engine indexing, both the language and the character encoding ```<meta charset="charset">``` should be defined as early as possible in an HTML document:
+
+```html
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+```
+
+11. <span stye="color:red;"> Setting the ViewPoint </span>
+
+The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+
+You should include the following ```<meta>``` element in all your web pages:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+* The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+* The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+12. <span stye="color:red;"> HTML Comments </span>
+
+Short comments should be written on one line.
+
+```html
+<!-- this is a commnet -->
+```
+
+Comments that spans mor ehtan one line, should be written like this:
+
+```html
+<!--
+  This is a long comment example. This is a long comment example.
+  This is a long comment example. This is a long comment example.
+-->
+```
+
+13. <span stye="color:red;"> Using Style Sheets when doing CSS </span>
+
+Use simple syntax for linking to style sheets (the type attribute is not necessary):
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+Loading the Javsscript external scripts 
+
+```html
+<script src="myscript.js">
+```
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
