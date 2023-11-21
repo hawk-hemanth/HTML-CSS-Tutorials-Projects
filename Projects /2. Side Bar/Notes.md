@@ -54,3 +54,9 @@ The box-shadow property attaches one or more shadows to an element.
 3. blur: The blur radius. The higher the number, the more blurred the shadow will be
 4. spread: Optional. The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
 5. color: Optional. The color of the shadow. The default value is the text color. Look at CSS Color Values for a complete list of possible color values.
+
+**Note: <label> and <input> used together to link the label id to the specific form element.
+
+## Transection 
+
+## Child Elements 
