@@ -5,4 +5,30 @@ class="fas fa-qrcode": The class attribute is used here to apply CSS classes. In
 fas stands for "FontAwesome Solid", indicating that the icon should be solid (as opposed to regular or light, which are other styles FontAwesome offers).
 fa-qrcode specifies the particular icon to be used, in this case, a QR code icon.
 
-2. 
+## Background 
+
+<a href="https://www.w3schools.com/cssref/css3_pr_background.php"> Background </a>
+
+The background property is a shorthand property for:
+
+1. background-color: Specifies the background color to be used
+2. background-image: 	Specifies ONE or MORE background images to be used	
+3. background-position: Specifies the position of the background images
+4. background-size: Specifies the size of the background images
+background-repeat: Specifies how to repeat the background images (Vertically,Horizontally)
+background-origin: Specifies the positioning area of the background images
+background-clip: Specifies the painting area of the background images
+background-attachment: Specifies whether the background images are fixed or scrolls with the rest of the page
+
+1. background-color: red;
+2. background-image: url('paper.gif'); | background-image: url('img_tree.gif'), url('paper.gif');
+3. background-position: left top; | background-position: left center; | background-position: left bottom; | background-position: right top; | background-position: right center; | background-position: right bottom;
+4. background-size: auto; | background-size: contain; | background-size: cover;
+5. background-repeat: repeat; | background-repeat: repeat-x; | background-repeat: repeat-y; | background-repeat: no-repeat;
+
+```html
+body {
+  background: lightblue url("img_tree.gif") fixed center no-repeat;
+}
+/* For shorthand use only color image position and repeat properites only */
+```
