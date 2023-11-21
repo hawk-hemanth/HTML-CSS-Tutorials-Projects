@@ -68,3 +68,21 @@
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
+.sidebar_menu .social_media{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+}
+
+.sidebar_menu .social_media i{
+  padding: 0 4px;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+
+.sidebar_menu .social_media i:hover{
+  opacity: 1;
+}
