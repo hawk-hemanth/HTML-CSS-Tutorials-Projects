@@ -32,3 +32,25 @@ body {
 }
 /* For shorthand use only color image position and repeat properites only */
 ```
+
+## Box-shadow Property
+
+<a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.php"> Box-shadow </a>
+The box-shadow property attaches one or more shadows to an element.
+
+```css
+#example1 {
+  box-shadow: 5px 10px;
+}
+
+#example2 {
+  box-shadow: 5px 10px 160px #888888; 
+  /* horizontal-offset vertical-offset blur clolor
+}
+```
+
+1. h-offset: The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box'
+2. v-offset: Required. The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box
+3. blur: The blur radius. The higher the number, the more blurred the shadow will be
+4. spread: Optional. The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
+5. color: Optional. The color of the shadow. The default value is the text color. Look at CSS Color Values for a complete list of possible color values.
